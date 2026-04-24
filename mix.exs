@@ -52,7 +52,9 @@ defmodule MobusScope.MixProject do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md"]
+      extras: ["README.md"],
+      source_ref: "master",
+      source_url_pattern: @source_url <> "/blob/master/{path}#L{line}"
     ]
   end
 end
